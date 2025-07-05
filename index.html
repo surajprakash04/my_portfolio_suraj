@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300">
+
+    <!-- Header & Navigation -->
+    <header class="bg-slate-900/70 backdrop-blur-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">JD</a>
+            <ul class="flex items-center space-x-6">
+                <li><a href="#about" class="hover:text-cyan-400 transition-colors">About</a></li>
+                <li><a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a></li>
+                <li><a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Hero Section -->
+        <section id="home" class="text-center py-20">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-4">John Doe</h1>
+            <p class="text-xl md:text-2xl text-cyan-400 mb-8">Aspiring Cloud Developer & Tech Enthusiast</p>
+            <a href="#projects" class="bg-cyan-500 text-white font-bold py-3 px-8 rounded-full hover:bg-cyan-600 transition-transform transform hover:scale-105">View My Work</a>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20">
+            <h2 class="text-4xl font-bold text-white text-center mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/3">
+                    <img src="https://placehold.co/400x400/1e293b/94a3b8?text=Your+Photo" 
+                         alt="A placeholder image for a portrait of John Doe" 
+                         class="rounded-full shadow-lg mx-auto"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x400/1e293b/94a3b8?text=Image+Error';">
+                </div>
+                <div class="md:w-2/3">
+                    <p class="mb-4">
+                        Hello! I'm John, a passionate developer with a keen interest in cloud technologies and building solutions on AWS. I'm currently learning how to deploy scalable, secure, and cost-effective applications in the cloud.
+                    </p>
+                    <p class="mb-4">
+                        This portfolio is my first step into the world of AWS, hosted on S3 and delivered globally with CloudFront. My goal is to continuously learn and apply my skills to real-world problems.
+                    </p>
+                    <p>
+                        When I'm not coding, I enjoy hiking, reading sci-fi novels, and exploring new coffee shops.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <h2 class="text-4xl font-bold text-white text-center mb-12">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project Card 1 -->
+                <div class="bg-slate-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Project+1" 
+                         alt="Placeholder for Project 1" 
+                         class="w-full h-48 object-cover"
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/1e293b/94a3b8?text=Image+Error';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Static Portfolio</h3>
+                        <p class="mb-4">This very website! Built with HTML & Tailwind CSS, hosted on AWS S3, and distributed via CloudFront.</p>
+                        <a href="#" class="text-cyan-400 hover:underline">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-slate-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Project+2" 
+                         alt="Placeholder for Project 2" 
+                         class="w-full h-48 object-cover"
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/1e293b/94a3b8?text=Image+Error';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">To-Do App (WIP)</h3>
+                        <p class="mb-4">A serverless to-do list application using Lambda, API Gateway, and DynamoDB. (Coming Soon!)</p>
+                        <a href="#" class="text-cyan-400 hover:underline">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="bg-slate-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Project+3" 
+                         alt="Placeholder for Project 3" 
+                         class="w-full h-48 object-cover"
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/1e293b/94a3b8?text=Image+Error';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Future Project</h3>
+                        <p class="mb-4">I'm always thinking about the next exciting project to build. Stay tuned for more updates!</p>
+                        <a href="#" class="text-cyan-400 hover:underline">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 text-center">
+            <h2 class="text-4xl font-bold text-white mb-4">Get In Touch</h2>
+            <p class="mb-8 max-w-2xl mx-auto">I'm currently looking for new opportunities and my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+            <a href="mailto:email@example.com" class="bg-slate-800 text-cyan-400 font-bold py-4 px-8 rounded-full border-2 border-cyan-400 hover:bg-cyan-400 hover:text-slate-900 transition-colors">
+                Say Hello
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800/50">
+        <div class="container mx-auto px-6 py-6 text-center text-slate-400">
+            <p>&copy; 2025 John Doe. All Rights Reserved.</p>
+            <p>Built with <span class="text-red-500">&hearts;</span> and deployed on AWS.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
